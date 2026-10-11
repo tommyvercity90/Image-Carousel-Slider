@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="carousel-container">
+        <h1>Image Carousel</h1>
+
+        <div class="carousel" id="carousel">
+            <div class="slides" id="slides">
+
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
+                         alt="Beautiful mountain landscape">
+                    <div class="caption">Explore the Mountains</div>
+                </div>
+
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200"
+                         alt="Peaceful lake surrounded by mountains">
+                    <div class="caption">Find Your Peace</div>
+                </div>
+
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
+                         alt="Beautiful tropical beach">
+                    <div class="caption">Ocean Adventures</div>
+                </div>
+
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200"
+                         alt="Sunlight passing through a forest">
+                    <div class="caption">Into the Wild</div>
+                </div>
+
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200"
+                         alt="Golden sunrise over a landscape">
+                    <div class="caption">Chase the Sunrise</div>
+                </div>
+
+            </div>
+
+            <button class="nav-btn prev" id="prevBtn"
+                    aria-label="Previous slide">&#10094;</button>
+            <button class="nav-btn next" id="nextBtn"
+                    aria-label="Next slide">&#10095;</button>
+
+            <div class="slide-counter" id="slideCounter"
+                 aria-live="polite">1 / 5</div>
+        </div>
+
+        <div class="indicators" id="indicators"
+             aria-label="Choose a slide"></div>
+
+        <p class="hint">Hover over the image to pause auto-rotation.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
